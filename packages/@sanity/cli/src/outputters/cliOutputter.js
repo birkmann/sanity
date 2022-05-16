@@ -9,6 +9,10 @@ export default {
     console.log(...args)
   },
 
+  printTable(...args) {
+    console.table(...args)
+  },
+
   warn(...args) {
     console.warn(...args)
   },

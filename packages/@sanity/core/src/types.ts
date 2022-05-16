@@ -30,6 +30,7 @@ export interface CliCommandContext {
 
 export interface CliOutputter {
   print: (...args: any[]) => void
+  printTable: (...args: any[]) => void
   warn: (...args: any[]) => void
   error: (...args: any[]) => void
   clear: () => void
