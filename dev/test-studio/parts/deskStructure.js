@@ -527,6 +527,10 @@ export default () =>
 
       S.divider(),
 
+      S.documentTypeListItem('author')
+        .id('test-sorting')
+        .child(S.documentTypeList('author').defaultOrdering([{field: 'role', direction: 'desc'}])),
+
       ...S.documentTypeListItems().filter(
         (listItem) =>
           !CI_INPUT_TYPES.includes(listItem.getId()) &&
